@@ -1,0 +1,55 @@
+.css-1kdg5og-MuiGrid-root{
+    width: 85% !important;
+    margin: auto !important;
+}
+
+
+.product-desc{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; 
+  white-space: pre-wrap;
+  padding-top:20px ;
+  /* padding-bottom: 20px; */
+ 
+}
+
+
+    @media (max-width:1200px) {
+   .product-title{
+       font-size: 18px !important;
+   }
+   .product-desc{
+       font-size: 12px !important;
+      
+   }
+        
+    }
+.product-img{
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+}
+.product-price{
+    font-size: 17spx !important;
+}
+.main-card a{
+    display: block;
+    border-radius: 5px;
+}
+.main-card a:hover{
+    box-shadow: 0 0 0 4px rgba(192, 192, 192, 0.125);
+    transition:transform 0.3s;
+}
+.main-card:hover .product-img{
+    
+    transform: scale(1.05);
+}
+
+.loader-box{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+        

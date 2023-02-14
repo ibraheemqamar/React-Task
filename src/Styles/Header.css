@@ -1,0 +1,28 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    background: #FFF;
+    z-index: 10;
+}
+.Logo{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.pages{
+    padding: 15px;
+}
+.Home-page{
+    padding: 10px;
+    color: #000;
+    font-weight: 500;
+}
+.User-page{
+    color: #000;
+    font-weight: 500;
+    padding: 10px;
+}
+

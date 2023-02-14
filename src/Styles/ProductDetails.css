@@ -1,0 +1,25 @@
+.main-info{
+    display: flex;
+    max-width: 60%;
+    margin: auto;
+    align-items: center;
+    height: 100vh; 
+}
+.details-box{
+    padding: 0 15px 0 15px !important;
+}
+.details-title{
+    font-size: 32px !important;
+    font-weight: bold !important;
+    margin-bottom: 35px !important;
+}
+
+.details-desc{
+    margin-bottom: 30px!important;
+}
+
+.details-price{
+    font-size: 25px !important;
+    font-weight: 600 !important;
+    margin-bottom: 15px!important;
+}
