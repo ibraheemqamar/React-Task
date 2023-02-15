@@ -32,9 +32,9 @@ const ProductDetails = () => {
     )
   }
   return (
-    <div className='main-info'>  
-        <Card sx={{ display: 'flex'  }}>
-      <CardMedia
+    <Box className='main-info'>  
+        <Card sx={{ display: 'flex'  }} className="details-card">
+      <CardMedia className='details-img'
         component="img"
         sx={{height: 300 }}
         image = {product?.images && (
@@ -57,7 +57,7 @@ const ProductDetails = () => {
         </Box>
       </Box>
     </Card>
-    </div>
+    </Box>
   )
 }
 

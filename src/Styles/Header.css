@@ -1,28 +1,61 @@
 .Header{
-    display: flex;
-    justify-content: space-between;
     width: 100%;
-    align-items: center;
+    max-width: 100%;
     position: fixed;
     background: #FFF;
     z-index: 10;
+    top: 0;
+    left: 0;
+    padding-inline: 7.5%;
+    box-shadow: 0 0 0 2px #0000001f
+}
+.child{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .Logo{
     font-size: 25px;
     font-weight: 700;
     color: rgb(0, 0, 0);
+    display: block;
+    margin-left: 15px;
 }
 .pages{
-    padding: 15px;
+    padding-block: 9px;
+    display: flex;
+    align-items: center;
 }
 .Home-page{
-    padding: 10px;
+    padding-block: 10px;
     color: #000;
-    font-weight: 500;
+    font-weight: 600;
 }
 .User-page{
-    color: #000;
-    font-weight: 500;
-    padding: 10px;
+    color: #000 ;
+    font-weight: 600 ;
+    padding-block: 10px ;
+    padding-left: 10px ;
+}
+.log-out{
+    color: #000 ;
+    padding-left: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+@media (max-width:576px) {
+    .Logo{
+        font-size: 18px;
+        font-weight: 700;  
+    } 
+    .Home-page,.User-page ,.log-out{
+        font-size: 10px;
+        padding-left: 5px ;
+
+    }
+   
 }
 

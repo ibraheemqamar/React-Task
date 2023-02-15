@@ -40,7 +40,7 @@ function UsersTable() {
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 500 }} aria-label="custom pagination table">
        
-         <TableHead>
+         <TableHead className='table-head'>
          <TableRow >
               <TableCell>
                 ID 
@@ -62,18 +62,18 @@ function UsersTable() {
                 {row.id}
                 
               </TableCell>
-              <TableCell style={{ width: 160 }}>
+              <TableCell >
                 {row.name}
                 
               </TableCell>
-              <TableCell style={{ width: 160 }}>
+              <TableCell>
                 {row.email}
               </TableCell>
             </TableRow>
           ))}
 
         </TableBody>
-        <TableFooter>
+        <TableFooter className="table-footer">
           <TableRow>
             <TablePagination
               rowsPerPageOptions={[5, 10, 25, { label: 'All', value: -1 }]}

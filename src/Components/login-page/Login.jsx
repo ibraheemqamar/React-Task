@@ -12,18 +12,14 @@ const Login = () => {
   const navigate = useNavigate();
 
   const onSubmit = async () => {
-
-
     await axios.post(Log_Url, { email: userName, password }).then((result)=>{
         if (result?.data) {
            navigate("/Products");
+           localStorage.setItem("access-token",result.data.access_token)
         }
     }).catch(()=>{
        setError(true);
     })
-
-
-
   };
   return (
     <div className="Login-Container">

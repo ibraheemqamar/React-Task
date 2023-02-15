@@ -34,18 +34,18 @@ const Products = () => {
         )
     }
   return (
-    <Grid container rowSpacing={2} columnSpacing={{ xs: 2}}>
-        {products.map((prod,i) => {
+    <Grid container rowSpacing={2} columnSpacing={{ xs: 2}} >
+        {products.map((prod,i) => { 
             return(
                 <Grid item sm={6} xs={12} md={4} className="main-card" key={i}>
                     <Link to= {`/ProductDetails/${prod.id}`}>
                     <Card >
                         <CardMedia className="product-img"
                         component="img"
-                            sx={{ height: 180 }}
+                            sx={{ height: 200 }}
                             image={prod.images[2]}
                         />
-                        <CardContent>
+                        <CardContent className="card-content">
                             <Typography gutterBottom variant="h5" component="div" className='product-title'>
                              {prod.title}
                             </Typography>
