@@ -1,11 +1,7 @@
 import React, {useEffect} from 'react'
 import Login from './Components/login-page/Login';
-import "../src/Styles/Login.css";
-import "../src/Styles/Products.css";
-import "../src/Styles/ProductDetails.css";
-import "../src/Styles/Header.css"
-import"../src/Styles/Users.css"
 import "./App.css";
+import "../src/Styles/main.css"
 import { Route, Routes, useLocation} from 'react-router-dom';
 import Products from './Components/Products';
 import ProductDetails from './Components/productDetails';
